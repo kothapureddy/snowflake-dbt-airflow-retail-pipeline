@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    database: RETAIL_DB
+    schema: RAW
+    tables:
+      - name: customers
+      - name: products
+      - name: order_items
+  
+  - name: staging
+    database: RETAIL_DB
+    schema: STAGING
+    tables:
+      - name: orders_incremental

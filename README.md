@@ -18,7 +18,7 @@ RAW → Stream → Task → Procedure → STAGING
 ## Setup
 
 1. Run Snowflake scripts in order:
-   snowflake/01 → 07
+   snowflake/01 → 06
 
 2. Configure dbt profile
 

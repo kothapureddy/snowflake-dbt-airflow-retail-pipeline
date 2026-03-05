@@ -6,14 +6,14 @@ End-to-end CDC pipeline using:
 * dbt (staging → intermediate → marts)
 * Incremental processing
 * SCD Type-2 Snapshots
-* Airflow orchestration
+* Airflow orchestration → inprogress
 
 ## Flow
 
 RAW → Stream → Task → Procedure → STAGING
 → dbt → MART
 → Snapshot (history)
-→ Airflow scheduling
+→ Airflow scheduling → inprogress
 
 ## Setup
 
@@ -27,7 +27,7 @@ RAW → Stream → Task → Procedure → STAGING
    dbt snapshot
    dbt test
 
-4. Deploy Airflow DAG
+4. Deploy Airflow DAG → inprogress
 
 ## Test Incremental
 
